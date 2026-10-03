@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# NextSelf ses deposu — satır sonu kuralı (Bölüm 298, Windows geçişi)
+# Metin dosyaları (README.md, SHA256SUMS.txt) depoda ve diskte HER ZAMAN LF:
+# Windows'taki Git satır sonlarını CRLF'e çevirmesin, depo "değişmiş" görünmesin.
+* text=auto eol=lf
+# Ses dosyaları ikili: hiçbir dönüşüm yapılmaz (otomatik algılamaya bırakılmaz).
+*.mp3 binary
